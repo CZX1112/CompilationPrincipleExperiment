@@ -1,0 +1,1117 @@
+use production[5]: type_specifier->int 
+[translate] 5  varSize=[0]    strSize=[0]
+[/translate] 5  varSize=[0]    strSize=[0]
+
+use production[5]: type_specifier->int 
+[translate] 5  varSize=[1]    strSize=[0]
+[/translate] 5  varSize=[1]    strSize=[0]
+
+use production[13]: declaration_type->type_specifier ID ; 
+[translate] 13  varSize=[2]    strSize=[0]
+[case 13] [var pop]
+[/translate] 13  varSize=[1]    strSize=[0]
+
+use production[11]: declaration_list->declaration_type 
+[translate] 11  varSize=[1]    strSize=[0]
+[/translate] 11  varSize=[1]    strSize=[0]
+
+use production[5]: type_specifier->int 
+[translate] 5  varSize=[1]    strSize=[0]
+[/translate] 5  varSize=[1]    strSize=[0]
+
+use production[13]: declaration_type->type_specifier ID ; 
+[translate] 13  varSize=[2]    strSize=[0]
+[case 13] [var pop]
+[/translate] 13  varSize=[1]    strSize=[0]
+
+use production[12]: declaration_list->declaration_list declaration_type 
+[translate] 12  varSize=[1]    strSize=[0]
+[/translate] 12  varSize=[1]    strSize=[0]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[3]    strSize=[0]
+[case45] [str push] []
+[/translate] 45  varSize=[3]    strSize=[1]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[3]    strSize=[1]
+[/translate] 41  varSize=[3]    strSize=[1]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[3]    strSize=[1]
+[/translate] 38  varSize=[3]    strSize=[1]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[3]    strSize=[1]
+[/translate] 33  varSize=[3]    strSize=[1]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[3]    strSize=[1]
+[/translate] 30  varSize=[3]    strSize=[1]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[3]    strSize=[1]
+[/translate] 28  varSize=[3]    strSize=[1]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[3]    strSize=[1]
+[/translate] 26  varSize=[3]    strSize=[1]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[3]    strSize=[1]
+[/translate] 25  varSize=[3]    strSize=[1]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[3]    strSize=[1]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (=, 0, , a)
+
+[/translate] 24  varSize=[2]    strSize=[1]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[2]    strSize=[1]
+[/translate] 23  varSize=[2]    strSize=[1]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[2]    strSize=[1]
+[/translate] 22  varSize=[2]    strSize=[1]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[2]    strSize=[1]
+[/translate] 17  varSize=[2]    strSize=[1]
+
+use production[14]: statement_list->statement 
+[translate] 14  varSize=[2]    strSize=[1]
+[/translate] 14  varSize=[2]    strSize=[1]
+
+use production[46]: unary_expression->FLOAT 
+[translate] 46  varSize=[4]    strSize=[1]
+[case46] [str push] []
+[/translate] 46  varSize=[4]    strSize=[2]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[4]    strSize=[2]
+[/translate] 41  varSize=[4]    strSize=[2]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[4]    strSize=[2]
+[/translate] 38  varSize=[4]    strSize=[2]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[5]    strSize=[2]
+[case45] [str push] []
+[/translate] 45  varSize=[5]    strSize=[3]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[5]    strSize=[3]
+[/translate] 41  varSize=[5]    strSize=[3]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[6]    strSize=[3]
+[case45] [str push] []
+[/translate] 45  varSize=[6]    strSize=[4]
+
+use production[42]: multiplicative_expression->multiplicative_expression * unary_expression 
+[translate] 42  varSize=[6]    strSize=[4]
+[case42] [str pop] 
+[case42] [str pop] 
+[case42] [str push] (*, 4, 7, 0_TEMP)
+
+[/translate] 42  varSize=[5]    strSize=[3]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[5]    strSize=[3]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (*, 4, 7, 0_TEMP)
+(+, 2.0, 0_TEMP, 1_TEMP)
+
+[/translate] 39  varSize=[4]    strSize=[2]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[4]    strSize=[2]
+[/translate] 33  varSize=[4]    strSize=[2]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[4]    strSize=[2]
+[/translate] 30  varSize=[4]    strSize=[2]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[4]    strSize=[2]
+[/translate] 28  varSize=[4]    strSize=[2]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[4]    strSize=[2]
+[/translate] 26  varSize=[4]    strSize=[2]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[4]    strSize=[2]
+[/translate] 25  varSize=[4]    strSize=[2]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[4]    strSize=[2]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (*, 4, 7, 0_TEMP)
+(+, 2.0, 0_TEMP, 1_TEMP)
+(=, 1_TEMP, , b)
+
+[/translate] 24  varSize=[3]    strSize=[2]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[3]    strSize=[2]
+[/translate] 23  varSize=[3]    strSize=[2]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[3]    strSize=[2]
+[/translate] 22  varSize=[3]    strSize=[2]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[3]    strSize=[2]
+[/translate] 17  varSize=[3]    strSize=[2]
+
+use production[15]: statement_list->statement_list statement 
+[translate] 15  varSize=[3]    strSize=[2]
+[case 15] [str pop] 
+[case 15] [str pop] 
+[case 15] [str push] (=, 0, , a)
+(*, 4, 7, 0_TEMP)
+(+, 2.0, 0_TEMP, 1_TEMP)
+(=, 1_TEMP, , b)
+
+[/translate] 15  varSize=[2]    strSize=[1]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[3]    strSize=[1]
+[case44] [str push] []
+[/translate] 44  varSize=[3]    strSize=[2]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[3]    strSize=[2]
+[/translate] 41  varSize=[3]    strSize=[2]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[3]    strSize=[2]
+[/translate] 38  varSize=[3]    strSize=[2]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[3]    strSize=[2]
+[/translate] 33  varSize=[3]    strSize=[2]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[4]    strSize=[2]
+[case45] [str push] []
+[/translate] 45  varSize=[4]    strSize=[3]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[4]    strSize=[3]
+[/translate] 41  varSize=[4]    strSize=[3]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[4]    strSize=[3]
+[/translate] 38  varSize=[4]    strSize=[3]
+
+use production[35]: relational_expression->relational_expression > additive_expression 
+[translate] 35  varSize=[4]    strSize=[3]
+[case35] [str pop] 
+[case35] [str pop] 
+[case35] [str push] (>, a, 3, 2_TEMP)
+
+[/translate] 35  varSize=[3]    strSize=[2]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[3]    strSize=[2]
+[/translate] 30  varSize=[3]    strSize=[2]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[3]    strSize=[2]
+[/translate] 28  varSize=[3]    strSize=[2]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[3]    strSize=[2]
+[/translate] 26  varSize=[3]    strSize=[2]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[3]    strSize=[2]
+[/translate] 25  varSize=[3]    strSize=[2]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[3]    strSize=[2]
+[/translate] 23  varSize=[3]    strSize=[2]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[5]    strSize=[2]
+[case44] [str push] []
+[/translate] 44  varSize=[5]    strSize=[3]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[5]    strSize=[3]
+[/translate] 41  varSize=[5]    strSize=[3]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[5]    strSize=[3]
+[/translate] 38  varSize=[5]    strSize=[3]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[6]    strSize=[3]
+[case45] [str push] []
+[/translate] 45  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[6]    strSize=[4]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (+, a, 1, 3_TEMP)
+
+[/translate] 39  varSize=[5]    strSize=[3]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[5]    strSize=[3]
+[/translate] 33  varSize=[5]    strSize=[3]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[5]    strSize=[3]
+[/translate] 30  varSize=[5]    strSize=[3]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[5]    strSize=[3]
+[/translate] 28  varSize=[5]    strSize=[3]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[5]    strSize=[3]
+[/translate] 26  varSize=[5]    strSize=[3]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[5]    strSize=[3]
+[/translate] 25  varSize=[5]    strSize=[3]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[5]    strSize=[3]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (+, a, 1, 3_TEMP)
+(=, 3_TEMP, , a)
+
+[/translate] 24  varSize=[4]    strSize=[3]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[4]    strSize=[3]
+[/translate] 23  varSize=[4]    strSize=[3]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[4]    strSize=[3]
+[/translate] 22  varSize=[4]    strSize=[3]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[4]    strSize=[3]
+[/translate] 17  varSize=[4]    strSize=[3]
+
+use production[14]: statement_list->statement 
+[translate] 14  varSize=[4]    strSize=[3]
+[/translate] 14  varSize=[4]    strSize=[3]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[6]    strSize=[3]
+[case44] [str push] []
+[/translate] 44  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[6]    strSize=[4]
+[/translate] 38  varSize=[6]    strSize=[4]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[7]    strSize=[4]
+[case44] [str push] []
+[/translate] 44  varSize=[7]    strSize=[5]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[7]    strSize=[5]
+[/translate] 41  varSize=[7]    strSize=[5]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[7]    strSize=[5]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (+, b, a, 4_TEMP)
+
+[/translate] 39  varSize=[6]    strSize=[4]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[6]    strSize=[4]
+[/translate] 33  varSize=[6]    strSize=[4]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[6]    strSize=[4]
+[/translate] 30  varSize=[6]    strSize=[4]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[6]    strSize=[4]
+[/translate] 28  varSize=[6]    strSize=[4]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[6]    strSize=[4]
+[/translate] 26  varSize=[6]    strSize=[4]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[6]    strSize=[4]
+[/translate] 25  varSize=[6]    strSize=[4]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[6]    strSize=[4]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (+, b, a, 4_TEMP)
+(=, 4_TEMP, , b)
+
+[/translate] 24  varSize=[5]    strSize=[4]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[5]    strSize=[4]
+[/translate] 23  varSize=[5]    strSize=[4]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[5]    strSize=[4]
+[/translate] 22  varSize=[5]    strSize=[4]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[5]    strSize=[4]
+[/translate] 17  varSize=[5]    strSize=[4]
+
+use production[15]: statement_list->statement_list statement 
+[translate] 15  varSize=[5]    strSize=[4]
+[case 15] [str pop] 
+[case 15] [str pop] 
+[case 15] [str push] (+, a, 1, 3_TEMP)
+(=, 3_TEMP, , a)
+(+, b, a, 4_TEMP)
+(=, 4_TEMP, , b)
+
+[/translate] 15  varSize=[4]    strSize=[3]
+
+use production[9]: compound_statement->{ statement_list } 
+[translate] 9  varSize=[4]    strSize=[3]
+[/translate] 9  varSize=[4]    strSize=[3]
+
+use production[49]: iteration_statement->while ( expression ) compound_statement 
+[translate] 49  varSize=[4]    strSize=[3]
+[/translate] 49  varSize=[3]    strSize=[2]
+
+use production[18]: statement->iteration_statement 
+[translate] 18  varSize=[3]    strSize=[2]
+[/translate] 18  varSize=[3]    strSize=[2]
+
+use production[15]: statement_list->statement_list statement 
+[translate] 15  varSize=[3]    strSize=[2]
+[case 15] [str pop] 
+[case 15] [str pop] 
+[case 15] [str push] (=, 0, , a)
+(*, 4, 7, 0_TEMP)
+(+, 2.0, 0_TEMP, 1_TEMP)
+(=, 1_TEMP, , b)
+(0_LABEL, , , )
+(>, a, 3, 2_TEMP)
+(J!=, 2_TEMP, 0, 1_LABEL)
+(J, , , 2_LABEL)
+(1_LABEL, , , )
+
+(+, a, 1, 3_TEMP)
+(=, 3_TEMP, , a)
+(+, b, a, 4_TEMP)
+(=, 4_TEMP, , b)
+(J, , , 0_LABEL)
+(2_LABEL, , , )
+
+[/translate] 15  varSize=[2]    strSize=[1]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[3]    strSize=[1]
+[case44] [str push] []
+[/translate] 44  varSize=[3]    strSize=[2]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[3]    strSize=[2]
+[/translate] 41  varSize=[3]    strSize=[2]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[3]    strSize=[2]
+[/translate] 38  varSize=[3]    strSize=[2]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[3]    strSize=[2]
+[/translate] 33  varSize=[3]    strSize=[2]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[4]    strSize=[2]
+[case44] [str push] []
+[/translate] 44  varSize=[4]    strSize=[3]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[4]    strSize=[3]
+[/translate] 41  varSize=[4]    strSize=[3]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[4]    strSize=[3]
+[/translate] 38  varSize=[4]    strSize=[3]
+
+use production[36]: relational_expression->relational_expression <= additive_expression 
+[translate] 36  varSize=[4]    strSize=[3]
+[case36] [str pop] 
+[case36] [str pop] 
+[case36] [str push] (<=, a, b, 5_TEMP)
+
+[/translate] 36  varSize=[3]    strSize=[2]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[3]    strSize=[2]
+[/translate] 30  varSize=[3]    strSize=[2]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[3]    strSize=[2]
+[/translate] 28  varSize=[3]    strSize=[2]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[3]    strSize=[2]
+[/translate] 26  varSize=[3]    strSize=[2]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[3]    strSize=[2]
+[/translate] 25  varSize=[3]    strSize=[2]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[3]    strSize=[2]
+[/translate] 23  varSize=[3]    strSize=[2]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[5]    strSize=[2]
+[case45] [str push] []
+[/translate] 45  varSize=[5]    strSize=[3]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[5]    strSize=[3]
+[/translate] 41  varSize=[5]    strSize=[3]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[5]    strSize=[3]
+[/translate] 38  varSize=[5]    strSize=[3]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[6]    strSize=[3]
+[case45] [str push] []
+[/translate] 45  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[7]    strSize=[4]
+[case45] [str push] []
+[/translate] 45  varSize=[7]    strSize=[5]
+
+use production[42]: multiplicative_expression->multiplicative_expression * unary_expression 
+[translate] 42  varSize=[7]    strSize=[5]
+[case42] [str pop] 
+[case42] [str pop] 
+[case42] [str push] (*, 2, 3, 6_TEMP)
+
+[/translate] 42  varSize=[6]    strSize=[4]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[6]    strSize=[4]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (*, 2, 3, 6_TEMP)
+(+, 1, 6_TEMP, 7_TEMP)
+
+[/translate] 39  varSize=[5]    strSize=[3]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[6]    strSize=[3]
+[case45] [str push] []
+[/translate] 45  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[7]    strSize=[4]
+[case45] [str push] []
+[/translate] 45  varSize=[7]    strSize=[5]
+
+use production[43]: multiplicative_expression->multiplicative_expression / unary_expression 
+[translate] 43  varSize=[7]    strSize=[5]
+[case43] [str pop] 
+[case43] [str pop] 
+[case43] [str push] (/, 6, 3, 8_TEMP)
+
+[/translate] 43  varSize=[6]    strSize=[4]
+
+use production[40]: additive_expression->additive_expression - multiplicative_expression 
+[translate] 40  varSize=[6]    strSize=[4]
+[case40] [str pop] 
+[case40] [str pop] 
+[case40] [str push] (*, 2, 3, 6_TEMP)
+(+, 1, 6_TEMP, 7_TEMP)
+(/, 6, 3, 8_TEMP)
+(-, 7_TEMP, 8_TEMP, 9_TEMP)
+
+[/translate] 40  varSize=[5]    strSize=[3]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[6]    strSize=[3]
+[case45] [str push] []
+[/translate] 45  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[7]    strSize=[4]
+[case45] [str push] []
+[/translate] 45  varSize=[7]    strSize=[5]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[7]    strSize=[5]
+[/translate] 41  varSize=[7]    strSize=[5]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[7]    strSize=[5]
+[/translate] 38  varSize=[7]    strSize=[5]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[8]    strSize=[5]
+[case45] [str push] []
+[/translate] 45  varSize=[8]    strSize=[6]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[8]    strSize=[6]
+[/translate] 41  varSize=[8]    strSize=[6]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[8]    strSize=[6]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (+, 3, 4, 10_TEMP)
+
+[/translate] 39  varSize=[7]    strSize=[5]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[7]    strSize=[5]
+[/translate] 33  varSize=[7]    strSize=[5]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[7]    strSize=[5]
+[/translate] 30  varSize=[7]    strSize=[5]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[7]    strSize=[5]
+[/translate] 28  varSize=[7]    strSize=[5]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[7]    strSize=[5]
+[/translate] 26  varSize=[7]    strSize=[5]
+
+use production[48]: unary_expression->( logical_or_expression ) 
+[translate] 48  varSize=[7]    strSize=[5]
+[/translate] 48  varSize=[7]    strSize=[5]
+
+use production[42]: multiplicative_expression->multiplicative_expression * unary_expression 
+[translate] 42  varSize=[7]    strSize=[5]
+[case42] [str pop] 
+[case42] [str pop] 
+[case42] [str push] (+, 3, 4, 10_TEMP)
+(*, 2, 10_TEMP, 11_TEMP)
+
+[/translate] 42  varSize=[6]    strSize=[4]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[6]    strSize=[4]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (*, 2, 3, 6_TEMP)
+(+, 1, 6_TEMP, 7_TEMP)
+(/, 6, 3, 8_TEMP)
+(-, 7_TEMP, 8_TEMP, 9_TEMP)
+(+, 3, 4, 10_TEMP)
+(*, 2, 10_TEMP, 11_TEMP)
+(+, 9_TEMP, 11_TEMP, 12_TEMP)
+
+[/translate] 39  varSize=[5]    strSize=[3]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[5]    strSize=[3]
+[/translate] 33  varSize=[5]    strSize=[3]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[5]    strSize=[3]
+[/translate] 30  varSize=[5]    strSize=[3]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[5]    strSize=[3]
+[/translate] 28  varSize=[5]    strSize=[3]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[5]    strSize=[3]
+[/translate] 26  varSize=[5]    strSize=[3]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[5]    strSize=[3]
+[/translate] 25  varSize=[5]    strSize=[3]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[5]    strSize=[3]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (*, 2, 3, 6_TEMP)
+(+, 1, 6_TEMP, 7_TEMP)
+(/, 6, 3, 8_TEMP)
+(-, 7_TEMP, 8_TEMP, 9_TEMP)
+(+, 3, 4, 10_TEMP)
+(*, 2, 10_TEMP, 11_TEMP)
+(+, 9_TEMP, 11_TEMP, 12_TEMP)
+(=, 12_TEMP, , a)
+
+[/translate] 24  varSize=[4]    strSize=[3]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[4]    strSize=[3]
+[/translate] 23  varSize=[4]    strSize=[3]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[4]    strSize=[3]
+[/translate] 22  varSize=[4]    strSize=[3]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[4]    strSize=[3]
+[/translate] 17  varSize=[4]    strSize=[3]
+
+use production[14]: statement_list->statement 
+[translate] 14  varSize=[4]    strSize=[3]
+[/translate] 14  varSize=[4]    strSize=[3]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[6]    strSize=[3]
+[case44] [str push] []
+[/translate] 44  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[6]    strSize=[4]
+[/translate] 38  varSize=[6]    strSize=[4]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[7]    strSize=[4]
+[case45] [str push] []
+[/translate] 45  varSize=[7]    strSize=[5]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[7]    strSize=[5]
+[/translate] 41  varSize=[7]    strSize=[5]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[7]    strSize=[5]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (+, a, 2, 13_TEMP)
+
+[/translate] 39  varSize=[6]    strSize=[4]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[6]    strSize=[4]
+[/translate] 33  varSize=[6]    strSize=[4]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[6]    strSize=[4]
+[/translate] 30  varSize=[6]    strSize=[4]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[6]    strSize=[4]
+[/translate] 28  varSize=[6]    strSize=[4]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[6]    strSize=[4]
+[/translate] 26  varSize=[6]    strSize=[4]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[6]    strSize=[4]
+[/translate] 25  varSize=[6]    strSize=[4]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[6]    strSize=[4]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (+, a, 2, 13_TEMP)
+(=, 13_TEMP, , b)
+
+[/translate] 24  varSize=[5]    strSize=[4]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[5]    strSize=[4]
+[/translate] 23  varSize=[5]    strSize=[4]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[5]    strSize=[4]
+[/translate] 22  varSize=[5]    strSize=[4]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[5]    strSize=[4]
+[/translate] 17  varSize=[5]    strSize=[4]
+
+use production[15]: statement_list->statement_list statement 
+[translate] 15  varSize=[5]    strSize=[4]
+[case 15] [str pop] 
+[case 15] [str pop] 
+[case 15] [str push] (*, 2, 3, 6_TEMP)
+(+, 1, 6_TEMP, 7_TEMP)
+(/, 6, 3, 8_TEMP)
+(-, 7_TEMP, 8_TEMP, 9_TEMP)
+(+, 3, 4, 10_TEMP)
+(*, 2, 10_TEMP, 11_TEMP)
+(+, 9_TEMP, 11_TEMP, 12_TEMP)
+(=, 12_TEMP, , a)
+(+, a, 2, 13_TEMP)
+(=, 13_TEMP, , b)
+
+[/translate] 15  varSize=[4]    strSize=[3]
+
+use production[9]: compound_statement->{ statement_list } 
+[translate] 9  varSize=[4]    strSize=[3]
+[/translate] 9  varSize=[4]    strSize=[3]
+
+use production[16]: statement->compound_statement 
+[translate] 16  varSize=[4]    strSize=[3]
+[/translate] 16  varSize=[4]    strSize=[3]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[6]    strSize=[3]
+[case45] [str push] []
+[/translate] 45  varSize=[6]    strSize=[4]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[6]    strSize=[4]
+[/translate] 41  varSize=[6]    strSize=[4]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[6]    strSize=[4]
+[/translate] 38  varSize=[6]    strSize=[4]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[6]    strSize=[4]
+[/translate] 33  varSize=[6]    strSize=[4]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[6]    strSize=[4]
+[/translate] 30  varSize=[6]    strSize=[4]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[6]    strSize=[4]
+[/translate] 28  varSize=[6]    strSize=[4]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[6]    strSize=[4]
+[/translate] 26  varSize=[6]    strSize=[4]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[6]    strSize=[4]
+[/translate] 25  varSize=[6]    strSize=[4]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[6]    strSize=[4]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (=, 9, , b)
+
+[/translate] 24  varSize=[5]    strSize=[4]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[5]    strSize=[4]
+[/translate] 23  varSize=[5]    strSize=[4]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[5]    strSize=[4]
+[/translate] 22  varSize=[5]    strSize=[4]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[5]    strSize=[4]
+[/translate] 17  varSize=[5]    strSize=[4]
+
+use production[14]: statement_list->statement 
+[translate] 14  varSize=[5]    strSize=[4]
+[/translate] 14  varSize=[5]    strSize=[4]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[7]    strSize=[4]
+[case44] [str push] []
+[/translate] 44  varSize=[7]    strSize=[5]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[7]    strSize=[5]
+[/translate] 41  varSize=[7]    strSize=[5]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[8]    strSize=[5]
+[case44] [str push] []
+[/translate] 44  varSize=[8]    strSize=[6]
+
+use production[42]: multiplicative_expression->multiplicative_expression * unary_expression 
+[translate] 42  varSize=[8]    strSize=[6]
+[case42] [str pop] 
+[case42] [str pop] 
+[case42] [str push] (*, a, b, 14_TEMP)
+
+[/translate] 42  varSize=[7]    strSize=[5]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[7]    strSize=[5]
+[/translate] 38  varSize=[7]    strSize=[5]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[8]    strSize=[5]
+[case44] [str push] []
+[/translate] 44  varSize=[8]    strSize=[6]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[8]    strSize=[6]
+[/translate] 41  varSize=[8]    strSize=[6]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[8]    strSize=[6]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (*, a, b, 14_TEMP)
+(+, 14_TEMP, b, 15_TEMP)
+
+[/translate] 39  varSize=[7]    strSize=[5]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[8]    strSize=[5]
+[case45] [str push] []
+[/translate] 45  varSize=[8]    strSize=[6]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[8]    strSize=[6]
+[/translate] 41  varSize=[8]    strSize=[6]
+
+use production[38]: additive_expression->multiplicative_expression 
+[translate] 38  varSize=[8]    strSize=[6]
+[/translate] 38  varSize=[8]    strSize=[6]
+
+use production[45]: unary_expression->INT 
+[translate] 45  varSize=[9]    strSize=[6]
+[case45] [str push] []
+[/translate] 45  varSize=[9]    strSize=[7]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[9]    strSize=[7]
+[/translate] 41  varSize=[9]    strSize=[7]
+
+use production[44]: unary_expression->ID 
+[translate] 44  varSize=[10]    strSize=[7]
+[case44] [str push] []
+[/translate] 44  varSize=[10]    strSize=[8]
+
+use production[42]: multiplicative_expression->multiplicative_expression * unary_expression 
+[translate] 42  varSize=[10]    strSize=[8]
+[case42] [str pop] 
+[case42] [str pop] 
+[case42] [str push] (*, 8, a, 16_TEMP)
+
+[/translate] 42  varSize=[9]    strSize=[7]
+
+use production[40]: additive_expression->additive_expression - multiplicative_expression 
+[translate] 40  varSize=[9]    strSize=[7]
+[case40] [str pop] 
+[case40] [str pop] 
+[case40] [str push] (*, 8, a, 16_TEMP)
+(-, 0, 16_TEMP, 17_TEMP)
+
+[/translate] 40  varSize=[8]    strSize=[6]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[8]    strSize=[6]
+[/translate] 33  varSize=[8]    strSize=[6]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[8]    strSize=[6]
+[/translate] 30  varSize=[8]    strSize=[6]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[8]    strSize=[6]
+[/translate] 28  varSize=[8]    strSize=[6]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[8]    strSize=[6]
+[/translate] 26  varSize=[8]    strSize=[6]
+
+use production[48]: unary_expression->( logical_or_expression ) 
+[translate] 48  varSize=[8]    strSize=[6]
+[/translate] 48  varSize=[8]    strSize=[6]
+
+use production[41]: multiplicative_expression->unary_expression 
+[translate] 41  varSize=[8]    strSize=[6]
+[/translate] 41  varSize=[8]    strSize=[6]
+
+use production[39]: additive_expression->additive_expression + multiplicative_expression 
+[translate] 39  varSize=[8]    strSize=[6]
+[case39] [str pop] 
+[case39] [str pop] 
+[case39] [str push] (*, a, b, 14_TEMP)
+(+, 14_TEMP, b, 15_TEMP)
+(*, 8, a, 16_TEMP)
+(-, 0, 16_TEMP, 17_TEMP)
+(+, 15_TEMP, 17_TEMP, 18_TEMP)
+
+[/translate] 39  varSize=[7]    strSize=[5]
+
+use production[33]: relational_expression->additive_expression 
+[translate] 33  varSize=[7]    strSize=[5]
+[/translate] 33  varSize=[7]    strSize=[5]
+
+use production[30]: equality_expression->relational_expression 
+[translate] 30  varSize=[7]    strSize=[5]
+[/translate] 30  varSize=[7]    strSize=[5]
+
+use production[28]: logical_and_expression->equality_expression 
+[translate] 28  varSize=[7]    strSize=[5]
+[/translate] 28  varSize=[7]    strSize=[5]
+
+use production[26]: logical_or_expression->logical_and_expression 
+[translate] 26  varSize=[7]    strSize=[5]
+[/translate] 26  varSize=[7]    strSize=[5]
+
+use production[25]: assignment_expression->logical_or_expression 
+[translate] 25  varSize=[7]    strSize=[5]
+[/translate] 25  varSize=[7]    strSize=[5]
+
+use production[24]: assignment_expression->ID = assignment_expression 
+[translate] 24  varSize=[7]    strSize=[5]
+[case24] [str pop] 
+[case24] [str pop] 
+[case24] [str push] (*, a, b, 14_TEMP)
+(+, 14_TEMP, b, 15_TEMP)
+(*, 8, a, 16_TEMP)
+(-, 0, 16_TEMP, 17_TEMP)
+(+, 15_TEMP, 17_TEMP, 18_TEMP)
+(=, 18_TEMP, , a)
+
+[/translate] 24  varSize=[6]    strSize=[5]
+
+use production[23]: expression->assignment_expression 
+[translate] 23  varSize=[6]    strSize=[5]
+[/translate] 23  varSize=[6]    strSize=[5]
+
+use production[22]: expression_statement->expression ; 
+[translate] 22  varSize=[6]    strSize=[5]
+[/translate] 22  varSize=[6]    strSize=[5]
+
+use production[17]: statement->expression_statement 
+[translate] 17  varSize=[6]    strSize=[5]
+[/translate] 17  varSize=[6]    strSize=[5]
+
+use production[15]: statement_list->statement_list statement 
+[translate] 15  varSize=[6]    strSize=[5]
+[case 15] [str pop] 
+[case 15] [str pop] 
+[case 15] [str push] (=, 9, , b)
+(*, a, b, 14_TEMP)
+(+, 14_TEMP, b, 15_TEMP)
+(*, 8, a, 16_TEMP)
+(-, 0, 16_TEMP, 17_TEMP)
+(+, 15_TEMP, 17_TEMP, 18_TEMP)
+(=, 18_TEMP, , a)
+
+[/translate] 15  varSize=[5]    strSize=[4]
+
+use production[9]: compound_statement->{ statement_list } 
+[translate] 9  varSize=[5]    strSize=[4]
+[/translate] 9  varSize=[5]    strSize=[4]
+
+use production[16]: statement->compound_statement 
+[translate] 16  varSize=[5]    strSize=[4]
+[/translate] 16  varSize=[5]    strSize=[4]
+
+use production[53]: selection_statement->if ( expression ) statement else statement 
+[translate] 53  varSize=[5]    strSize=[4]
+[/translate] 53  varSize=[3]    strSize=[2]
+
+use production[20]: statement->selection_statement 
+[translate] 20  varSize=[3]    strSize=[2]
+[/translate] 20  varSize=[3]    strSize=[2]
+
+use production[15]: statement_list->statement_list statement 
+[translate] 15  varSize=[3]    strSize=[2]
+[case 15] [str pop] 
+[case 15] [str pop] 
+[case 15] [str push] (=, 0, , a)
+(*, 4, 7, 0_TEMP)
+(+, 2.0, 0_TEMP, 1_TEMP)
+(=, 1_TEMP, , b)
+(0_LABEL, , , )
+(>, a, 3, 2_TEMP)
+(J!=, 2_TEMP, 0, 1_LABEL)
+(J, , , 2_LABEL)
+(1_LABEL, , , )
+
+(+, a, 1, 3_TEMP)
+(=, 3_TEMP, , a)
+(+, b, a, 4_TEMP)
+(=, 4_TEMP, , b)
+(J, , , 0_LABEL)
+(2_LABEL, , , )
+(<=, a, b, 5_TEMP)
+(J!=, 5_TEMP, 0, 3_LABEL)
+(J, , , 4_LABEL)
+(3_LABEL, , , )
+
+(*, 2, 3, 6_TEMP)
+(+, 1, 6_TEMP, 7_TEMP)
+(/, 6, 3, 8_TEMP)
+(-, 7_TEMP, 8_TEMP, 9_TEMP)
+(+, 3, 4, 10_TEMP)
+(*, 2, 10_TEMP, 11_TEMP)
+(+, 9_TEMP, 11_TEMP, 12_TEMP)
+(=, 12_TEMP, , a)
+(+, a, 2, 13_TEMP)
+(=, 13_TEMP, , b)
+(J, , , 5_LABEL)
+(4_LABEL, , , )
+
+(=, 9, , b)
+(*, a, b, 14_TEMP)
+(+, 14_TEMP, b, 15_TEMP)
+(*, 8, a, 16_TEMP)
+(-, 0, 16_TEMP, 17_TEMP)
+(+, 15_TEMP, 17_TEMP, 18_TEMP)
+(=, 18_TEMP, , a)
+(5_LABEL, , , )
+
+[/translate] 15  varSize=[2]    strSize=[1]
+
+use production[10]: compound_statement->{ declaration_list statement_list } 
+[translate] 10  varSize=[2]    strSize=[1]
+[/translate] 10  varSize=[2]    strSize=[1]
+
+use production[3]: main_declaration->type_specifier ID ( ) compound_statement 
+[translate] 3  varSize=[2]    strSize=[1]
+[case 3] [var pop]
+[case 3] [var pop]
+[/translate] 3  varSize=[0]    strSize=[1]
+
+use production[1]: program->main_declaration 
+[translate] 1  varSize=[0]    strSize=[1]
+[/translate] 1  varSize=[0]    strSize=[1]
+
