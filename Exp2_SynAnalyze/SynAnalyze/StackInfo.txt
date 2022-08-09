@@ -1,0 +1,49 @@
+token:int
+symbol stack:
+[('#', -1, 1)]
+status stack:
+[0]
+
+token:identifier
+symbol stack:
+[('#', -1, 1), ('int', 0, 0)]
+status stack:
+[0, 5]
+
+token:identifier
+symbol stack:
+[('#', -1, 1), ('type_specifier', 1, 0)]
+status stack:
+[0, 4]
+
+token:=
+symbol stack:
+[('#', -1, 1), ('type_specifier', 1, 0), ('identifier', 0, 1)]
+status stack:
+[0, 4, 13]
+
+token:(
+symbol stack:
+[('#', -1, 1), ('type_specifier', 1, 0), ('identifier', 0, 1), ('=', 0, 2)]
+status stack:
+[0, 4, 13, 18]
+
+token:;
+symbol stack:
+[('#', -1, 1), ('type_specifier', 1, 0), ('identifier', 0, 1), ('=', 0, 2), ('(', 0, 3)]
+status stack:
+[0, 4, 13, 18, 27]
+
+line 1
+found: ;
+expecting:
+expression
+constant_expression
+primary_expression
+identifier
+number
+(
+function_expression
+function
+
+Syntax Error!

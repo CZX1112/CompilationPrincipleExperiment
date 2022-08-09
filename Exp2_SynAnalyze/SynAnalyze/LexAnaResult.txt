@@ -1,0 +1,5 @@
+1 keyword int
+1 identifier a
+1 operator =
+1 limiter (
+1 limiter ;

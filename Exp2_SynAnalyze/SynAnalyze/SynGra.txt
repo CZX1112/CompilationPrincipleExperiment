@@ -1,0 +1,78 @@
+sstart:start  
+start:external_declaration start  
+start:$  
+external_declaration:declaration  
+external_declaration:function_definition  
+type_specifier:int  
+type_specifier:float  
+type_specifier:double  
+type_specifier:char  
+declaration:type_specifier declaration_parameter declaration_parameter_suffix ;  
+declaration_parameter:identifier declaration_parameter_assign  
+declaration_parameter_assign:= expression  
+declaration_parameter_assign:$  
+declaration_parameter_suffix:, declaration_parameter declaration_parameter_suffix  
+declaration_parameter_suffix:$  
+primary_expression:identifier  
+primary_expression:number  
+primary_expression:( expression )  
+operator:+  
+operator:-  
+operator:*  
+operator:/  
+operator:%  
+operator:<  
+operator:>  
+operator:^  
+operator:&  
+operator:<=  
+operator:>=  
+assignment_operator:=  
+assignment_operator:+ =  
+assignment_operator:- =  
+assignment_operator:* =  
+assignment_operator:/ =  
+assignment_operator:% =  
+assignment_operator:^ =  
+assignment_operator:& =  
+assignment_expression:identifier assignment_operator expression  
+assignment_expression_list_suffix:, assignment_expression assignment_expression_list_suffix  
+assignment_expression_list_suffix:$  
+assignment_expression_list:assignment_expression assignment_expression_list_suffix  
+assignment_expression_list:$  
+expression:constant_expression  
+expression:function_expression  
+constant_expression:primary_expression arithmetic_expression  
+arithmetic_expression:operator  
+arithmetic_expression:primary_expression arithmetic_expression  
+arithmetic_expression:operator primary_expression arithmetic_expression  
+arithmetic_expression:$  
+function_expression:function identifier ( expression_list )  
+expression_list_suffix:, expression expression_list_suffix  
+expression_list_suffix:$  
+expression_list:expression expression_list_suffix  
+expression_list:$  
+function_definition:function type_specifier identifier ( function_parameter_list ) compound_statement  
+function_parameter_list:function_parameter function_parameter_list_suffix  
+function_parameter_list:$  
+function_parameter_list_suffix:, function_parameter function_parameter_list_suffix  
+function_parameter_list_suffix:$  
+function_parameter:type_specifier identifier  
+compound_statement:{ statement_list }  
+statement_list:statement statement_list  
+statement_list:$  
+statement:expression_statement  
+statement:jump_statement  
+statement:selection_statement  
+statement:iteration_statement  
+statement:compound_statement  
+statement:declaration  
+expression_statement:assignment_expression_list ;  
+expression_statement:print ( expression ) ;  
+expression_statement:scanf ( identifier ) ;  
+jump_statement:continue ;  
+jump_statement:break ;  
+jump_statement:return expression ;  
+selection_statement:if ( expression ) statement else statement  
+iteration_statement:while ( expression ) statement  
+iteration_statement:for ( declaration expression ; assignment_expression ) statement  
